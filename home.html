@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220207160149">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top top-header">
+				<div class="top-header__container">
+					<div class="top-header__logo">
+						<a href="">
+							<img src="img/logo.svg" alt="">
+						</a>
+					</div>
+					<div class="top-header__search">
+						<form action="" class="top-header__form">
+							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-placeholder="Найти" placeholder="Найти" class="input">
+							<button type="submit" class="button">
+								<picture><source srcset="img/icon-search.webp" type="image/webp"><img src="img/icon-search.png" alt="search" class="top-header__icon"></picture>
+							</button>
+						</form>
+					</div>
+					<a href="#" data-popup="#callback" class="top-header__modal" data-da=".menu-header__container, 767, 3">Обратный звонок</a>
+					<div class="top-header__place" data-da=".menu-header__container, 767, 1">
+						Москва, пр-кт Андропова, д. 22
+						14 этаж, офис 1407 (м.Коломенская)
+					</div>
+					<div class="top-header__contacts contacts-header" data-da=".menu-header__container, 767, 2">
+						<a href="tel:74999388448" class="contacts-header__top">
+							<img src="img/whatsup.svg" alt="" class="contacts-header__icon">
+							+7 (499) 938-84-48
+						</a>
+						<div class="contacts-header__bottom">Работаем в будни с 9:00 до 19:00</div>
+					</div>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+			<div class="header__menu menu-header">
+				<div class="menu-header__container">
+					<nav class="menu-header__nav">
+						<ul class="menu-header__list">
+							<li class="menu-header__link"><a href="">Главная</a></li>
+							<div data-spollers class="spollers">
+								<div class="spollers__item">
+									<button type="button" data-spoller-close data-spoller class="spollers__title menu-header__link">О нас </button>
+									<div class="spollers__body">
+										<div class="spollers__list">
+											<div class="spollers__link"><a href="">О компании</a></div>
+											<div class="spollers__link"><a href="">Наша команда</a></div>
+											<div class="spollers__link"><a href="">Сми о нас</a></div>
+											<div class="spollers__link"><a href="">Отзывы</a></div>
+											<div class="spollers__link"><a href="">Оплата</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div data-spollers class="spollers">
+								<div class="spollers__item">
+									<button type="button" data-spoller-close data-spoller class="spollers__title menu-header__link">Услуги</button>
+									<div class="spollers__body">
+										<div class="spollers__list">
+											<div class="spollers__link"><a href="">Услуга 1</a></div>
+											<div class="spollers__link"><a href="">Услуга 2</a></div>
+											<div class="spollers__link"><a href="">Услуга 3</a></div>
+											<div class="spollers__link"><a href="">Услуга 4</a></div>
+											<div class="spollers__link"><a href="">Услуга 5</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<li class="menu-header__link"><a href="">Арбит. Упр.</a></li>
+							<div data-spollers class="spollers">
+								<div class="spollers__item">
+									<button type="button" data-spoller-close data-spoller class="spollers__title menu-header__link">Выигранные дела</button>
+									<div class="spollers__body">
+										<div class="spollers__list">
+											<div class="spollers__link"><a href="">Дело 1</a></div>
+											<div class="spollers__link"><a href="">Дело 2</a></div>
+											<div class="spollers__link"><a href="">Дело 3</a></div>
+											<div class="spollers__link"><a href="">Дело 4</a></div>
+											<div class="spollers__link"><a href="">Дело 5</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<li class="menu-header__link"><a href="">Важно знать</a></li>
+							<li class="menu-header__link"><a href="">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<div id="callback" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icon-close.svg" alt="">
+				</button>
+				<form action="" class="popup__form" data-dev data-popup-message="#thanks">
+					<div class="popup__form-title">Обратный звонок</div>
+					<div class="popup__form-input">
+						<input autocomplete="off" type="text" name="form[]" data-error="Обязательное поле" placeholder="Ваше имя" data-validate class="input">
+					</div>
+					<div class="popup__form-input">
+						<input autocomplete="off" type="tel" name="form[]" data-error="Обязательное поле" placeholder="+7 (999) 999-99-99" data-validate class="input popup__form-input">
+					</div>
+					<button type="submit" class="popup__form-send">
+						Перезвоните мне!
+					</button>
+					<div class="popup__form-text">
+						Оставьте свой номер телефона. В течение 10 минут с вами свяжется наш менеджер и проконсультирует по всем
+						вопросам.
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="thanks" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icon-close.svg" alt="">
+				</button>
+				<div class="popup__form-thanks">Вы оставлил заявку на обратный звонок!</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220207160149"></script>
+</body>
+
+</html>
