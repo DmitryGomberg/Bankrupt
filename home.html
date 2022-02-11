@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220210174143">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220211204013">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -102,7 +102,69 @@
 		</header>
 
 		<main class="page">
-
+			<div class="form">
+				<div class="form__container">
+					<div class="form__top top-form">
+						<div class="top-form__info">
+							<div class="top-form__name">
+								Законно спишем ваши долги!
+							</div>
+							<h1 class="top-form__title">
+								Банкротство юридических лиц
+							</h1>
+						</div>
+						<div class="top-form__main">
+							<form class="top-form__form form-top" action="#">
+								<div class="form-top__name">
+									Оставьте заявку сегодня и получите первый месяц
+									<span class="form__top-bold">
+										БЕСПЛАТНО!
+									</span>
+								</div>
+								<select data-required name="form[]" class="form-top__select">
+									<option value="1">Долг до 100 тыс. руб.</option>
+									<option value="2">Долг до 300 тыс. руб.</option>
+									<option value="3" selected>Долг до 500 тыс. руб.</option>
+									<option value="4">Долг до 1 000 тыс. руб.</option>
+								</select>
+								<div class="form-top__phone">
+									<input data-error="Обязательное поле" data-required placeholder="+7 (___) ___-__-__" data-inputmask="'mask': '+7 (999) 999-99-99'" />
+								</div>
+								<button type="submit" class="form-top__button">Оставить заявку</button>
+								<div class="form-top__text">
+									Нажимая на кнопку вы соглашаетесь с Политикой конфиденциальности
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="form__bottom bottom-form">
+						<div class="bottom-form__part">
+							<div class="bottom-form__text">
+								Консультация бесплатно
+							</div>
+							<div class="bottom-form__icon">
+								<img src="img/form-1.svg" alt="">
+							</div>
+						</div>
+						<div class="bottom-form__part">
+							<div class="bottom-form__text">
+								Гарантия <br> списания долга
+							</div>
+							<div class="bottom-form__icon">
+								<img src="img/form-2.svg" alt="">
+							</div>
+						</div>
+						<div class="bottom-form__part">
+							<div class="bottom-form__text">
+								Защита от коллекторов
+							</div>
+							<div class="bottom-form__icon">
+								<img src="img/form-3.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 		<footer class="footer">
 			<div class="footer__top top-footer">
@@ -207,13 +269,13 @@
 				<button data-close type="button" class="popup__close">
 					<img src="img/icon-close.svg" alt="">
 				</button>
-				<form action="" class="popup__form" data-dev data-popup-message="#thanks">
+				<form action="" class="popup__form" data-popup-message="#thanks">
 					<div class="popup__form-title">Обратный звонок</div>
 					<div class="popup__form-input">
-						<input autocomplete="off" type="text" name="form[]" data-error="Обязательное поле" placeholder="Ваше имя" data-validate class="input">
+						<input autocomplete="off" type="text" name="form[]" data-error="Обязательное поле" data-required placeholder="Ваше имя" data-validate class="input">
 					</div>
 					<div class="popup__form-input">
-						<input autocomplete="off" type="tel" name="form[]" data-error="Обязательное поле" placeholder="+7 (999) 999-99-99" data-validate class="input popup__form-input">
+						<input autocomplete="off" type="tel" name="form[]" data-error="Обязательное поле" data-required placeholder="+7 (___) ___-__-__" data-inputmask="'mask': '+7 (999) 999-99-99'" data-validate class="input popup__form-input">
 					</div>
 					<button type="submit" class="popup__form-send">
 						Перезвоните мне!
@@ -236,7 +298,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220210174143"></script>
+	<script src="js/app.min.js?_v=20220211204013"></script>
 </body>
 
 </html>
