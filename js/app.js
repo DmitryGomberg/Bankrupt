@@ -7586,7 +7586,7 @@
             });
         }
         function initSliders() {
-            if (document.querySelector(".swiper")) {
+            if (document.querySelector(".services__slider")) {
                 new core(".services__slider", {
                     modules: [ Navigation ],
                     observer: true,
@@ -7614,6 +7614,19 @@
                     on: {}
                 });
             }
+            if (document.querySelector(".reviews__slider")) new core(".reviews__slider", {
+                modules: [ Navigation ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 1,
+                spaceBetween: 30,
+                autoHeight: true,
+                speed: 800,
+                navigation: {
+                    nextEl: ".reviews__slider-next"
+                },
+                on: {}
+            });
         }
         window.addEventListener("load", (function(e) {
             initSliders();
