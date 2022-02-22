@@ -3013,7 +3013,6 @@ body::after {
 }
 @media (max-width: 1100px) {
   .helper__container {
-    grid-auto-flow: row;
     grid-template-columns: 1fr;
   }
 }
