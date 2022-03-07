@@ -119,6 +119,7 @@ h6 {
   overflow: hidden;
   touch-action: none;
 }
+
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -730,6 +731,13 @@ h6 {
   }
 }
 
+.top-header__logo,
+.bottom-footer__part {
+  font-size: 30px;
+  color: #56b641;
+  font-weight: 900;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -737,8 +745,9 @@ h6 {
 .footer__top {
   width: 100%;
   background: url("../img/footer/footer_bg.png");
-  background-position: center;
-  background-size: cover;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
 }
 @media (min-width: 85.5em) {
   .footer__top {
@@ -3071,6 +3080,12 @@ h6 {
 @media (max-width: 20em) {
   .helper__container {
     gap: 1.5rem;
+  }
+}
+@media (max-width: 23.4375em) {
+  .helper__container {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (min-width: 1100px) {
